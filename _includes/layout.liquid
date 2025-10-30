@@ -1,5 +1,5 @@
 ---
-title: 11ty Boilerplate
+title: Everyday Carry — layout
 ---
 
 <!DOCTYPE html>
@@ -8,15 +8,31 @@ title: 11ty Boilerplate
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/styles/screen.css">
+  <link rel="stylesheet" href="/styles/theme.css">
+  <meta name="theme-color" content="#0E7490">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="/" title="Go home">Home</a></li>
-      <li><a href="/about/" title="About the boilerplate">About</a></li>
-    </ul>
-  </nav>
-    {{ content }}
+  <header class="site-header">
+    <div class="inner">
+      <h1 class="site-title"><a href="/">Everyday Carry — Jon Morales</a></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/items/">Items</a></li>
+          <li><a href="/about/">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="inner">{{ content }}</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="inner">
+      <p>Built with ♥ — bring your essentials, leave the rest.</p>
+    </div>
+  </footer>
 </body>
 </html>

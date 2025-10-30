@@ -1,0 +1,65 @@
+:root{
+  --bg: #f4f8f9;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0ea5a4; /* teal */
+  --accent-2: #fb923c; /* warm orange */
+  --text: #0f172a;
+}
+
+/* Base page */
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg,var(--bg), #eef6f7);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.inner{
+  max-width:900px;
+  margin:0 auto;
+  padding:28px;
+}
+
+.site-header{
+  border-bottom:4px solid rgba(14,165,164,0.08);
+  background:rgba(14,165,164,0.03);
+}
+.site-title{ margin:0; padding:18px 0; font-size:1.2rem;}
+.site-title a{ color:var(--text); text-decoration:none;}
+
+.main-nav ul{ list-style:none; padding:0; margin:0; display:flex; gap:12px;}
+.main-nav a{ color:var(--muted); text-decoration:none; padding:10px 8px; border-radius:8px;}
+.main-nav a:hover{ color:var(--accent); background:rgba(14,165,164,0.04);}
+
+.hero{ text-align:center; padding:36px 0 12px 0;}
+.lead{ color:var(--muted); margin-top:8px;}
+
+.grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap:20px; margin-top:18px;}
+.card{ background:var(--card); border-radius:12px; box-shadow:0 6px 18px rgba(15,23,42,0.06); overflow:hidden; border:1px solid rgba(15,23,42,0.03);}
+.card-link{ display:block; color:inherit; text-decoration:none;}
+.card-media{ background: linear-gradient(135deg, rgba(14,165,164,0.06), rgba(251,146,60,0.04)); padding:22px; display:flex; align-items:center; justify-content:center;}
+.card-media img{ width:96px; height:96px; object-fit:contain;}
+.card-body{ padding:14px 18px 20px 18px;}
+.card h3{ margin:0 0 6px 0; font-size:1.05rem;}
+.card .excerpt{ margin:0; color:var(--muted); font-size:0.95rem;}
+
+.note{ font-size:0.9rem; color:var(--muted); margin-top:18px;}
+
+.site-footer{ margin-top:40px; padding:20px 0; border-top:1px solid rgba(15,23,42,0.04); text-align:center; color:var(--muted);}
+
+/* Utility */
+img{ max-width:100%; height:auto; display:block;}
+
+/* Accessibility focus ring */
+a:focus{ outline:3px solid rgba(14,165,164,0.18); outline-offset:2px;}
+
+/* More specific components */
+.item-photo{ border-radius:8px; max-width:360px; box-shadow:0 8px 20px rgba(2,6,23,0.06);}
+
+/* 14 rulesets above provide a consistent theme */

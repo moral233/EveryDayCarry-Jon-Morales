@@ -1,3 +1,24 @@
+# Everyday Carry — Jon Morales
+
+This small 11ty site showcases three items I don't leave home without. It uses a custom 11ty layout, a reusable shortcode, and a fresh theme stylesheet.
+
+What I added:
+- A new layout: `_includes/layout.liquid` (updated) used site-wide.
+- A shortcode `edd_card` registered in `.eleventy.js` to render item cards.
+- Item pages: `/items/phone/`, `/items/wallet/`, `/items/keys/`.
+- New theme stylesheet: `styles/theme.css` (new color palette and >10 rulesets).
+- Placeholder images in `images/` (SVG). Replace these with your phone photos to meet personal-photo requirements.
+
+How to preview locally (if you have 11ty installed):
+
+```bash
+# install dev deps and run 11ty (optional: use npx)
+npm install
+npx @11ty/eleventy --serve
+```
+
+Replace images:
+- Take photos with your phone and save them into the `images/` folder using the same filenames (`phone.svg` → `phone.jpg` or `phone.png`) and update the image `src` in the corresponding item page if the extension changes.
 # 11ty Boilerplate
 
 Super basic [11ty](https://www.11ty.dev) starter to get you moving in the right direction and gently introduce some core features like **Passthrough File Copy** for handling images and stylesheets, **layouts**, and templating with [Liquid](https://shopify.github.io/liquid/) and [Markdown](https://www.markdownguide.org).
