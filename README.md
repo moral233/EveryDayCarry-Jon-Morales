@@ -17,8 +17,9 @@ npm install
 npx @11ty/eleventy --serve
 ```
 
-Replace images:
-- Take photos with your phone and save them into the `images/` folder using the same filenames (`phone.svg` → `phone.jpg` or `phone.png`) and update the image `src` in the corresponding item page if the extension changes.
+Replace images / current state:
+- I updated the site to use the JPEG photos you uploaded: `images/Phone.jpeg`, `images/Wallet.jpeg`, and `images/CarKeys.jpeg`.
+- If you want to swap in different photos, add them to the `images/` folder and update the `src` in the corresponding item page (`items/phone/index.liquid`, `items/wallet/index.liquid`, `items/keys/index.liquid`).
 # 11ty Boilerplate
 
 Super basic [11ty](https://www.11ty.dev) starter to get you moving in the right direction and gently introduce some core features like **Passthrough File Copy** for handling images and stylesheets, **layouts**, and templating with [Liquid](https://shopify.github.io/liquid/) and [Markdown](https://www.markdownguide.org).
